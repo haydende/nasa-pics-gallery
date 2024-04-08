@@ -12,11 +12,7 @@ class HttpClient {
             headers.append("Content-Type", "application/json")
         }
 
-        let request = new Request(
-            `${url}?${params}`,
-            {
-                headers: headers
-            })
+        let request = new Request(`${url}?${params}`, { headers: headers })
 
         console.debug(`Sending request to ${request.url}`)
 
